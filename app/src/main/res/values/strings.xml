@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Indonesian`s Heroes</string>
+    <string name="txt_name">Name</string>
+    <string name="img_hero">img_hero</string>
+    <string name="txt_description">Description</string>
+
+</resources>

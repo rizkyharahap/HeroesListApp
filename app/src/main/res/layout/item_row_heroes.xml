@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_vertical"
+    android:layout_marginEnd="@dimen/dimen_vertical"
+    android:layout_marginBottom="@dimen/dimen_vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ahmad_dahlan"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextContent.TextTitle"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="@string/txt_name"
+            android:layout_toEndOf="@id/iv_photo"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/TextContent.TextDesc"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="@string/txt_description"
+            android:layout_toEndOf="@id/iv_photo"
+            android:layout_below="@id/tv_name"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
